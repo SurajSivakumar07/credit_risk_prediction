@@ -1,10 +1,6 @@
-# model.py
-
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
-import streamlit as st
 
-@st.cache_data
 def train_model(X, y):
     rf = RandomForestClassifier(random_state=42)
     param_grid = {
